@@ -232,92 +232,40 @@ article h6{
     font-size:15px;
     line-height:45px;
 }
-/***************************************
 
+.description{
+    background:white;
+    color: black;
+}
 
+.description h1{
+    
+    font-weight:normal;
+    font-size:30px;
+    line-height:45px;
+}
+
+.description h6{
+    
+    font-weight:normal;
+    font-size:15px;
+    line-height:45px;
+}
+.description h6{
+    
+    font-weight:normal;
+    font-size:15px;
+    line-height:45px;
+}
 
 
 
 /*Footer*/ 
 footer{
-    background-color:#2c3e50;
+    background-color:#333447;
     color:#fff;
     overflow:auto;
     padding:55px 80px 30px 80px;
     position: relative;
     width:100%;
-}
-
-/*Dividmos al footer en 3 columnas*/ 
-#grid-footer{
-    column-count:3;
-}
-
-/*Clase reutilizable para cada columna del footer*/ 
-.item-footer{
-    float: left;
-    text-align:center;
-}
-
-
-/*Clase reutilizable para cada titulo del footer*/ 
-footer h3{
-    font-size:25px;
-    letter-spacing:2px;/*Le colocamos espacio entre las letras para que se vea ordenado*/
-    padding-bottom: 26px;
-}
-
-/*Clase reutilizable para cada parrafo del footer*/ 
-.item-footer p{
-    font-size:20px;
-    line-height:30px;/*LAltura de cada linea*/
-}
-
-/*Hipervinculo del footer*/ 
-.item-footer p a{
-    color: #18bc9c;
-    text-decoration:none;
-}
-
-/*Evento HOVER -Hipervinculo del footer*/ 
-.item-footer p a:hover{
-    color: #18bc9c;
-    text-decoration:underline;
-   
-}
-/*Elementos de la lista del footer*/ 
-.item-footer ul li{
-    display: inline-block;
-    padding-top:10px;
-}
-
-
-/*Botones de redes sociales*/
-.social-button{
-    font-size:20px;margin-top:15px;
-    border:solid 2px #fff;
-    text-align:center;
-    border:2px solid #fff;
-    border-radius:100%;/*Redondeamos el borde con un radio de 100%*/
-    display: inline-block;
-    color:white;
-    padding:10px;
-}
-
-/*Evento HOVER - Botones de redes sociales*/
-.social-button:hover{
-    background:#fff;
-    border:solid 2px #fff;
-    color:#18bc9c;
-    transition-duration:1s;/*Tiempo de transicion*/
-}
-
-
-
-/*Copyright del footer*/
-#footer-down{
-    left:50%;
-    padding-top:120px;
-    position: relative;
-    transform:translateX(-14%); 
 }
