@@ -1,3 +1,296 @@
 /*
  * Estilos de tu proyecto
  */
+
+ /*Configuracion inicial de la página*/
+
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+    
+  }
+  
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+ /*Declaramos la fuente para toda la página web*/
+body
+{
+    font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+ /*Declaramos la etiqueta <nav> para el menú de navegación*/
+nav{
+    background: #2c3e50;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight:700;
+    letter-spacing:1px; /*Le colocamos espacio entre las letras para que se vea ordenado*/
+    padding:55px 0px;
+    position:fixed;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;/*Transformamos el texto a mayuscula*/
+    z-index: 1000;/*Le colocamos z-index para que se coloque por encima de los demás elementos*/
+}
+
+/*Vinculos del menú de navegación*/
+nav a{
+    text-decoration: none;/*Quitamos el subrayado de los hipervinculos del menú de navegación*/
+    color:#fff;
+}
+
+
+}
+
+/*Menú de navegación*/
+#navigation-menu{
+    position: absolute;
+    right: 9%;
+    top:50%; /*Lo colocamos en el centro de su contenedor*/
+    transform: translateY(-50%); /*Lo rotamos en si mismo para que se ubique en el centro de si mismo*/
+}
+
+
+/*Lista del menú de navegación*/
+#navigation-menu ul li{
+   list-style-type:none;
+ }
+
+ /*Elementos del menú de navegación*/
+ #navigation-menu ul a{
+    color:#fff;
+    display: inline-block; /*Colocamos los elementos de la lista en de manera inline-block*/
+    padding: 10px;
+    
+}
+
+ /*Evento-Hover*/
+#navigation-menu ul a:hover{
+    color: #18bc9c; /*Coloreamos los vinculos cada vez que el cursor pase por encima de él*/
+}
+
+ /*Evento-Active*/
+#navigation-menu ul a:active{
+    background:#18bc9c;/*Coloreamos el fondo cada vez que el vinculo este activo*/    
+    border-radius:3px;/*Redondeamos el borde cada vez que el vinculo este activo*/    
+    color:#fff; /*Coloreamos los vinculos cada vez que el vinculo este activo*/    
+} 
+
+ /*Cabecera del documento*/
+#top{
+    background-color: #18bc9c;
+    color:#fff;
+    padding: 150px 0px 150px 0px;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+}
+
+/*Nombre de la página*/
+#name{
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;/*Definimos la fuente especifica para este elemento*/
+    font-size:80px;
+    font-weight:700;
+    letter-spacing:1px; /*Le colocamos espacio entre las letras para que se vea ordenado*/
+    padding:30px 0px 0px 0px; 
+    text-align:center;
+    text-transform:uppercase;  /*Transformamos el texto a mayuscula*/
+}
+
+/*Caracteristicas del producto*/
+#features{
+    font-size: 30px;
+    padding:15px 0px 0px 0px;
+}
+
+/*Sección PORTFOLIO*/
+#services{
+    position: relative;
+    background: white; /*Asignamos color de fondo*/
+    text-align: center;
+    color:#212529; /*Asignamos color de letra*/
+    padding:115px 120px;
+}
+
+
+/*Estilos para titulos*/
+h2,h3{
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 45px;
+    font-weight:700;
+    text-transform:uppercase;/*Transformamos el texto a mayuscula*/
+}
+
+/*Creamos columnas dentro de una capa para que los elementos se agrupen en 3*/
+#grid-portafolio{
+    column-count:2;
+}
+
+/*Figures del PORTFOLIO*/
+#grid-portafolio figure{
+    background-color: #18bc9c;/*Asignamos un color de fondo*/
+    background-image:url(../assets/images/search.png);/*Asignamos una imagen de fondo*/
+    background-position: center; /*Posicionamos el fondo en el centro*/
+    background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
+    background-size: 15%;/*Ajustamos el tamaño de la imagen de fondo*/
+    display:inline-block;/*Ajustamos el tamaño de la imagen de fondo*/
+    height: 253px;
+    margin-bottom:30px;
+    width: 350px;
+    
+}
+
+/*Imagenes del PORTFOLIO*/
+#grid-portafolio figure img{
+    max-width:100%; /*Le asignamos el maximo tamaño al igual que su contenedor*/
+}
+
+/*Evento HOVER del PORTFOLIO*/
+#grid-portafolio figure a:hover{
+    opacity:0.1;/*Cada vez que el cursor se coloque sobre la imagen esta se desvanecera y dejara ver el background*/
+    transition-duration:1s;/*Tiempo de transicion*/
+}
+
+/*Section ABOUT*/
+#about{
+    background-color: #18bc9c;/*Asignamos el color de fondo*/
+    color:#fff;
+    padding: 110px 310px 100px 310px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+ /*Clase reutilizable para cada grupo de elementos del formulario (input y textarea)*/   
+.controls input,.controls textarea{
+    border:none; /*Eliminamos el borde*/
+    border-bottom:#eee solid 1px;/*Le colocamos el borde en la parte baja*/
+    color:#161616;
+    font-size:25px;
+    outline:none;/*Eliminamos el outline*/
+    padding-bottom:30px;
+    resize:none;
+    width:100%;
+}
+
+/*Evento focus de las cajas de textos*/   
+input[type=text]:focus {
+    border: 3px solid #fff;
+} 
+
+
+/*Boton  del formulario*/   
+#sendmessage{
+    background-color:#18bc9c;
+    border-color:#18bc9c;
+    border-radius: 5px;/*Borde radial del boton*/   
+    color:#fff;
+    cursor: pointer;
+    float: left; 
+    font-size:20px;
+    font-weight:700;
+    margin-top:50px;
+    padding: 15px 20px;  
+}
+
+/*Evento Hover-Boton  del formulario*/ 
+#sendmessage:hover{
+    border-color:#11866f;
+    background-color:#128f76;
+    color:#fff;
+    transition-duration:1s;/*Tiempo de transicion*/
+}
+
+/*Footer*/ 
+footer{
+    background-color:#2c3e50;
+    color:#fff;
+    overflow:auto;
+    padding:55px 80px 30px 80px;
+    position: relative;
+    width:100%;
+}
+
+/*Dividmos al footer en 3 columnas*/ 
+#grid-footer{
+    column-count:3;
+}
+
+/*Clase reutilizable para cada columna del footer*/ 
+.item-footer{
+    float: left;
+    text-align:center;
+}
+
+
+/*Clase reutilizable para cada titulo del footer*/ 
+footer h3{
+    font-size:25px;
+    letter-spacing:2px;/*Le colocamos espacio entre las letras para que se vea ordenado*/
+    padding-bottom: 26px;
+}
+
+/*Clase reutilizable para cada parrafo del footer*/ 
+.item-footer p{
+    font-size:20px;
+    line-height:30px;/*LAltura de cada linea*/
+}
+
+/*Hipervinculo del footer*/ 
+.item-footer p a{
+    color: #18bc9c;
+    text-decoration:none;
+}
+
+/*Evento HOVER -Hipervinculo del footer*/ 
+.item-footer p a:hover{
+    color: #18bc9c;
+    text-decoration:underline;
+   
+}
+/*Elementos de la lista del footer*/ 
+.item-footer ul li{
+    display: inline-block;
+    padding-top:10px;
+}
+
+
+/*Botones de redes sociales*/
+.social-button{
+    font-size:20px;margin-top:15px;
+    border:solid 2px #fff;
+    text-align:center;
+    border:2px solid #fff;
+    border-radius:100%;/*Redondeamos el borde con un radio de 100%*/
+    display: inline-block;
+    color:white;
+    padding:10px;
+}
+
+/*Evento HOVER - Botones de redes sociales*/
+.social-button:hover{
+    background:#fff;
+    border:solid 2px #fff;
+    color:#18bc9c;
+    transition-duration:1s;/*Tiempo de transicion*/
+}
+
+
+
+/*Copyright del footer*/
+#footer-down{
+    left:50%;
+    padding-top:120px;
+    position: relative;
+    transform:translateX(-14%); 
+}
