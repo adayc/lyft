@@ -111,7 +111,7 @@ nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top:250px;/*modificar*/
+    padding-top:100px;
     width: 100%;
 }
 
@@ -197,6 +197,40 @@ h6{
     font-weight:normal;
     line-height:45px;
 }
+
+
+
+
+#services{
+    
+    background-image: url("../assets/images/phone.png");
+    background-position:75% 75%;
+    background-repeat: no-repeat;
+    background-size:30%;
+    color:white;
+    padding:100px;
+    padding:100px;
+
+    position: relative;
+    
+    width:250px;/*modificar*/
+    width: 100%;
+
+    
+}
+
+article h1{
+    color:white;
+    font-weight:normal;
+    font-size:30px;
+    line-height:45px;
+}
+
+article h6{
+    color:white;
+    font-weight:normal;
+    font-size:15px;
+    line-height:45px;
 }
 /***************************************
 
