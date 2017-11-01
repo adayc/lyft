@@ -32,9 +32,11 @@ body
  nav{
     background: linear-gradient(#2c283f, #200e36);
     font-size:18px;
+    font-weight:lighter;
+    letter-spacing:1.5px; /*Le colocamos espacio entre las letras para que se vea ordenado*/
+    padding-bottom:50px;
+    padding-top:73px;
     
-    letter-spacing:1px; /*Le colocamos espacio entre las letras para que se vea ordenado*/
-    padding:55px 0px;
     position:fixed;
     width:100%;
     text-align:center;
@@ -53,22 +55,19 @@ figure img{
 }
 
 
-/*Vinculos del menú de navegación*/
-nav a{
-    text-decoration: none;/*Quitamos el subrayado de los hipervinculos del menú de navegación*/
-    
-}
+
 
 
 
 
 /*Menú de navegación*/
 #navigation-menu{
-    outline:solid 1px red;
+    
     position: absolute;
-    right: 1%;
+    right: 4%;
     top:50%; /*Lo colocamos en el centro de su contenedor*/
     transform: translateY(-50%); /*Lo rotamos en si mismo para que se ubique en el centro de si mismo*/
+    
 }
 
 
@@ -82,12 +81,16 @@ nav a{
     color:#fff;
     display: inline-block; /*Colocamos los elementos de la lista en de manera inline-block*/
     padding: 10px;
+   
     
 }
+
+
 #navigation-menu ul li a{
     color:#fff;
     display: inline-block; /*Colocamos los elementos de la lista en de manera inline-block*/
     padding: 10px;
+    text-decoration: none;/*Quitamos el subrayado de los hipervinculos del menú de navegación*/
     
 }
 
@@ -102,7 +105,8 @@ nav a{
     border-radius: 15%;
     color:white;
     font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight:lighter;
     
 
 }
@@ -111,18 +115,21 @@ nav a{
 #top{
     
     background-image: url("../assets/images/hero.gif");
-    background-position: center;
+    background-position: left-center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top:100px;
+    position: relative;
+    top:0px;
     width: 100%;
+    outline: solid 1px green;
 }
 
 
 
 aside{
     
-    padding-left:50%;
+    padding-left:57.5%;
     position:relative;
     
     
@@ -137,11 +144,25 @@ aside{
     padding:70px;
 }
 
-form{
-    background-color: white;
+#top h1{
+    color:#352384;
+    font-weight:600;
+    font-size:38px;
+    line-height:45px;
 }
 
-.small,label{
+#top h6{
+    color:#352384;
+    font-size:13px;
+    font-weight:lighter;
+    letter-spacing:1px;
+    line-height:45px;
+}
+
+
+
+
+.small{
     color:#bcc0c7;
     font-size:10px;
 }
@@ -188,18 +209,6 @@ input[type=text]:focus {
 }
 
 
- h1{
-    color:#352384;
-    font-weight:700;
-    font-size:40px;
-    line-height:45px;
-}
-
-h6{
-    color:#352384;
-    font-weight:normal;
-    line-height:45px;
-}
 
 
 
