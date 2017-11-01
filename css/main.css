@@ -23,15 +23,16 @@
  /*Declaramos la fuente para toda la página web*/
 body
 {
-    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
     background: linear-gradient(#76278F, #2B1E66);
 }
 
  /*Declaramos la etiqueta <nav> para el menú de navegación*/
  nav{
-    background: linear-gradient(#76278F, #2B1E66);
-    font-size:20px;
-    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background: linear-gradient(#2c283f, #200e36);
+    font-size:18px;
+    
     letter-spacing:1px; /*Le colocamos espacio entre las letras para que se vea ordenado*/
     padding:55px 0px;
     position:fixed;
@@ -41,12 +42,12 @@ body
 }
 /*Logo - lyft*/
 figure img{
-    height:50px;
-    left:5%;
+    height:45px;
+    left:7%;
     position: absolute;
     top:50%; /*Lo colocamos en el centro de su contenedor*/
     transform: translateY(-50%); /*Lo rotamos en si mismo para que se ubique en el centro de si mismo*/
-    width:70px;
+    width:65px;
     
 
 }
@@ -63,8 +64,9 @@ nav a{
 
 /*Menú de navegación*/
 #navigation-menu{
+    outline:solid 1px red;
     position: absolute;
-    right: 9%;
+    right: 1%;
     top:50%; /*Lo colocamos en el centro de su contenedor*/
     transform: translateY(-50%); /*Lo rotamos en si mismo para que se ubique en el centro de si mismo*/
 }
@@ -95,12 +97,13 @@ nav a{
 }
 
 .btn{
-    background: linear-gradient(#76278F, #2B1E66);
-    border-color: white;
+    background: linear-gradient(#2c283f, #200e36);
+    border: solid 1px white;
     border-radius: 15%;
     color:white;
     font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 20px;
+    
 
 }
 
